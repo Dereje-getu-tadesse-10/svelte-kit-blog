@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--color-primary: theme(colors.rose.500);
+		--color-secondary: theme(colors.zinc.600);
+		--color-hover: theme(colors.rose.50);
+	}
+}
+
+iframe {
+	@apply rounded-md;
+	@apply shadow-2xl;
+	@apply my-14;
+}

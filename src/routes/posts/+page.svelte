@@ -1,0 +1,22 @@
+<script lang="ts">
+	import * as config from '$lib/config';
+	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
+	import PostCard from '$src/components/PostCard.svelte';
+	const {postsPageTitle,postsPageDesc,titleSite} = config
+	export let data;
+	const { posts } = data;
+</script>
+
+<svelte:head>
+	<title>{titleSite}</title>
+	<meta name="description" content={postsPageDesc} />
+	<meta property="og:title" content={titleSite} />
+	<meta property="og:description" content={postsPageDesc} />
+	<meta property="og:url" content={import.meta.env.VITE_APP_PUBLIC_URL} />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:title" content={titleSite} />
+	<meta name="twitter:description" content={postsPageDesc} />
+</svelte:head>
+
+<PostSummaryCard title={postsPageTitle} description={postsPageDesc} />
+<PostCard {posts} />
