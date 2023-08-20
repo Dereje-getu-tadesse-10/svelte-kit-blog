@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$src/routes/config';
+	import * as config from '$src/lib/config';
 	const { socials } = config;
 </script>
 
