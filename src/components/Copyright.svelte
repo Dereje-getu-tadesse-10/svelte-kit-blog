@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$src/lib/config';
+	import { config } from '$lib/index';
 	import dayjs from 'dayjs';
 	const currentYear = dayjs().year();
 </script>

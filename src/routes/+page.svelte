@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import * as config from '$src/lib/config';
-	const {homePageTitle, description, titleSite} = config
+	import { config } from '$lib/index';
+	const { homePageTitle, description, titleSite } = config;
 	import PostCard from '$src/components/PostCard.svelte';
-	import PostSummaryCard from "$src/components/PageSummaryCard.svelte";
+	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
 	export let data: PageData;
 	const posts = data.posts.slice(0, 4);
 </script>
@@ -19,6 +19,5 @@
 	<meta name="twitter:description" content={description} />
 </svelte:head>
 
-
-<PostSummaryCard title={homePageTitle} description={description} />
+<PostSummaryCard title={homePageTitle} {description} />
 <PostCard {posts} />

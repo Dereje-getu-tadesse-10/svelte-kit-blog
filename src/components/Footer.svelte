@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from "$src/lib/config"
+	import { config } from '$lib/index';
 	import PageLink from '$src/components/PageLink.svelte';
 	import Copyright from '$src/components/Copyright.svelte';
 	import CurrentPlaying from '$src/components/CurrentPlaying.svelte';

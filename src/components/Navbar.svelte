@@ -1,5 +1,5 @@
-<script lang="ts">
-    import * as config from "$src/lib/config"
+<script lang="ts">	
+import { config } from '$lib/index';
     import { activePage } from "$src/store";
     import { onMount } from "svelte";
 

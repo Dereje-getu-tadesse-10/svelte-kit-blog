@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$src/lib/config';
+		import { config } from '$lib/index';
 	const { socials } = config;
 </script>
 
