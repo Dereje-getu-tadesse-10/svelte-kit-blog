@@ -2,7 +2,7 @@
 	import * as config from '$lib/config';
 	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
 	import PostCard from '$src/components/PostCard.svelte';
-	const {postsPageTitle,postsPageDesc,titleSite} = config
+	const { postPageTitle, postsPageDesc, titleSite } = config;
 	export let data;
 	const { posts } = data;
 </script>
@@ -18,5 +18,5 @@
 	<meta name="twitter:description" content={postsPageDesc} />
 </svelte:head>
 
-<PostSummaryCard title={postsPageTitle} description={postsPageDesc} />
+<PostSummaryCard title={postPageTitle} description={postsPageDesc} />
 <PostCard {posts} />
