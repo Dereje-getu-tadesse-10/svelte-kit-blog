@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import * as config from '$src/lib/config';
+	import * as config from '$src/config';
 	const {homePageTitle, description, titleSite} = config
 	import PostCard from '$src/components/PostCard.svelte';
 	import PostSummaryCard from "$src/components/PageSummaryCard.svelte";
