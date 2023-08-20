@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from '$lib/config';
+	import * as config from '$src/routes/config.js';
 	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
 	import PostCard from '$src/components/PostCard.svelte';
 	const { postPageTitle, postsPageDesc, titleSite } = config;
