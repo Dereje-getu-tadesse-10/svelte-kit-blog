@@ -1,5 +1,5 @@
 <script lang="ts">
-    import * as config from "$src/config"
+    import * as config from "$src/lib/config"
     import {activePage} from "$src/store";
 </script>
 
