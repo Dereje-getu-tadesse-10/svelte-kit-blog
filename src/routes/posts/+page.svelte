@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { config } from '$lib/index';
-	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
+	import PostSummaryCard from '$src/components/SummaryCard.svelte';
 	import PostCard from '$src/components/PostCard.svelte';
 	const { postPageTitle, postsPageDesc, titleSite } = config;
 	export let data;

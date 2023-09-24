@@ -11,12 +11,14 @@
 
 	onMount(async () => {
 		await getCurrentSong();
+		console.log(data);
 	});
+	console.log(data);
 </script>
 
 <a
 	href={data.song_url}
-	class="flex flex-col items-center justify-center  text-zinc-600 md:flex-row"
+	class="flex flex-col items-center justify-center text-zinc-600 md:flex-row"
 	target="_blank"
 >
 	<div

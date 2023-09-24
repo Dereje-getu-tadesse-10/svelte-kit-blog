@@ -1,7 +1,7 @@
 <script lang="ts">
     import type {Data} from "$lib/types";
 	import { config } from '$lib/index';
-    import PageSummaryCard from "$src/components/PageSummaryCard.svelte";
+    import PageSummaryCard from "$src/components/SummaryCard.svelte";
     const {resPageTitle, resPageDesc} = config
     export let data:{ props: Data };
 </script>

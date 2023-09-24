@@ -6,9 +6,7 @@ export const getAccessToken = async () => {
 	const response = await fetch('https://accounts.spotify.com/api/token', {
 		method: 'POST',
 		headers: {
-			Authorization: `Basic ${Buffer.from(
-				`${import.meta.env.VITE_SPOTIFY_CLIENT_ID}:${import.meta.env.VITE_SPOTIFY_CLIENT_SECRET}`
-			).toString('base64')}`,
+			Authorization: `Basic ${import.meta.env.VITE_SPOTIFY_BASIC}`,
 			'Content-Type': 'application/x-www-form-urlencoded'
 		},
 		// Include the grant type and refresh token in the request body.

@@ -7,7 +7,7 @@ declare global {
 			code: number;
 		}
 		// interface Locals {}
-		interface PageData {}
+		// interface PageData {}
 		// interface Platform {}
 	}
 }

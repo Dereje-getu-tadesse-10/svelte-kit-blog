@@ -3,9 +3,10 @@
 	import { config } from '$lib/index';
 	const { homePageTitle, description, titleSite } = config;
 	import PostCard from '$src/components/PostCard.svelte';
-	import PostSummaryCard from '$src/components/PageSummaryCard.svelte';
+	import PostSummaryCard from '$src/components/SummaryCard.svelte';
 	export let data: PageData;
 	const posts = data.posts.slice(0, 4);
+	$: console.log(import.meta.env.BASIC);
 </script>
 
 <svelte:head>
