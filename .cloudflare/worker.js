@@ -421,17 +421,17 @@ var init_layout_ts = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/c.js
-var titleSite, description, homePageTitle, postsPageTitle, postsPageDesc, resPageTitle, resPageDesc, pageLinks, socials, VITE_APP_DEV_URL, VITE_APP_PUBLIC_URL, url, config;
-var init_c = __esm({
-  ".svelte-kit/output/server/chunks/c.js"() {
-    titleSite = "Kspotlight";
-    description = `D\xE9couvrez mon voyage d\u2018apprentissage du cor\xE9en ! Suivez mes progr\xE8s, astuces et d\xE9couvertes dans cette belle langue. Trouvez des ressources utiles, des recommandations de livres, sites web, applications, ainsi que des contenus captivants tels que cha\xEEnes YouTube, s\xE9ries et films pour vous immerger dans la culture cor\xE9enne. Rejoignez-moi dans cette aventure excitante !`;
-    homePageTitle = "\uC548\uB155 \u{1F44B}";
-    postsPageTitle = `Articles sur mon aventure dans l'apprentissage du cor\xE9en`;
-    postsPageDesc = `D\xE9couvrez tous les articles relatifs \xE0 mon voyage d'apprentissage du cor\xE9en. Suivez mon parcours, mes astuces et mes d\xE9couvertes tout au long de cette aventure passionnante. Je partage mes exp\xE9riences, mes r\xE9ussites et mes d\xE9fis, ainsi que des ressources utiles pour vous aider dans votre propre apprentissage de la langue cor\xE9enne.`;
-    resPageTitle = `Liens utiles`;
-    resPageDesc = `D\xE9couvrez mes d\xE9couvertes et ressources utiles lors de mon d\xE9fi d'apprentissage du cor\xE9en ! Sur cette page, je partage les liens, livres, sites web, applications, cha\xEEnes YouTube, s\xE9ries, films et autres contenus qui m'ont aid\xE9 dans mon parcours d'apprentissage du cor\xE9en.`;
+// .svelte-kit/output/server/chunks/conf.js
+var titleSite, description, homePageTitle, postPageTitle, postsPageDesc, resPageTitle, resPageDesc, pageLinks, socials, VITE_APP_DEV_URL, VITE_APP_PUBLIC_URL, url, config;
+var init_conf = __esm({
+  ".svelte-kit/output/server/chunks/conf.js"() {
+    titleSite = "Delight";
+    description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+    homePageTitle = "Home page";
+    postPageTitle = `Posts page`;
+    postsPageDesc = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+    resPageTitle = `Resources page`;
+    resPageDesc = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
     pageLinks = [
       {
         name: "Home",
@@ -458,8 +458,8 @@ var init_c = __esm({
       description,
       homePageTitle,
       pageLinks,
+      postPageTitle,
       postsPageDesc,
-      postsPageTitle,
       resPageDesc,
       resPageTitle,
       socials,
@@ -837,7 +837,7 @@ var import_dayjs, defaultValue, activePage, PageLink, Copyright, truncate, Curre
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/_layout.svelte.js"() {
     init_ssr();
-    init_c();
+    init_conf();
     init_index2();
     import_dayjs = __toESM(require_dayjs_min(), 1);
     init_Icon();
@@ -871,7 +871,7 @@ var init_layout_svelte = __esm({
       return `<a${add_attribute("href", data.song_url, 0)} class="flex flex-col items-center justify-center text-zinc-600 md:flex-row" target="_blank"><div class="flex w-max items-center justify-center gap-2 rounded-md px-2 py-1 text-base shadow-lg ring-1 ring-zinc-900/5 backdrop-blur shadow-zinc/5">${data.isPlaying ? `<svg class="${"w-5 h-5 " + escape(data.isPlaying && "fill-primary animate-spin-slow", true)}" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spotify</title><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg> <p>${escape(truncate(data.title, 13))},</p> <p>${escape(truncate(data.artist, 15))}</p>` : ``} ${!data.isPlaying ? `<svg class="h-5 w-5 fill-zinc-600" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spotify</title><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"></path></svg> <p data-svelte-h="svelte-10qcv5j">Not playing</p>` : ``}</div></a>`;
     });
     Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<footer class="mt-32"><section class="mx-auto flex max-w-2xl flex-col items-center justify-center gap-5 px-4 pt-11 pb-20 sm:px-8 md:justify-between lg:max-w-5xl"><h1 class="font-bold text-zinc-800 text-1xl">${escape(titleSite.toLowerCase())}</h1> ${validate_component(PageLink, "PageLink").$$render($$result, {}, {}, {})} ${validate_component(CurrentPlaying, "CurrentPlaying").$$render($$result, {}, {}, {})} ${validate_component(Copyright, "Copyright").$$render($$result, {}, {}, {})}</section></footer>`;
+      return `<footer class="mt-32"><section class="mx-auto flex max-w-2xl flex-col items-center justify-center gap-5 px-4 pt-11 pb-20 sm:px-8 md:justify-between lg:max-w-5xl"><h1 class="font-medium text-rose-600 text-1xl">${escape(titleSite)}</h1> ${validate_component(PageLink, "PageLink").$$render($$result, {}, {}, {})} ${validate_component(CurrentPlaying, "CurrentPlaying").$$render($$result, {}, {}, {})} ${validate_component(Copyright, "Copyright").$$render($$result, {}, {}, {})}</section></footer>`;
     });
     Navbar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $activePage, $$unsubscribe_activePage;
@@ -939,8 +939,8 @@ var init__ = __esm({
     index = 0;
     component = async () => component_cache ??= (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id = "src/routes/+layout.ts";
-    imports = ["_app/immutable/nodes/0.4ada0ccd.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/c.f156c77b.js", "_app/immutable/chunks/index.66f17a68.js", "_app/immutable/chunks/Icon.ab70926a.js"];
-    stylesheets = ["_app/immutable/assets/0.5a964082.css"];
+    imports = ["_app/immutable/nodes/0.684ac0d5.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/conf.8aeff460.js", "_app/immutable/chunks/index.66f17a68.js", "_app/immutable/chunks/Icon.c28bcaaf.js"];
+    stylesheets = ["_app/immutable/assets/0.288db6e7.css"];
     fonts = [];
   }
 });
@@ -1004,7 +1004,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => component_cache2 ??= (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.64a3d474.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/singletons.dadcd94f.js", "_app/immutable/chunks/index.66f17a68.js"];
+    imports2 = ["_app/immutable/nodes/1.c5a6618f.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/singletons.13742bb2.js", "_app/immutable/chunks/index.66f17a68.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1073,12 +1073,12 @@ var init_PostCard = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/PageSummaryCard.js
-var PageSummaryCard;
-var init_PageSummaryCard = __esm({
-  ".svelte-kit/output/server/chunks/PageSummaryCard.js"() {
+// .svelte-kit/output/server/chunks/SummaryCard.js
+var SummaryCard;
+var init_SummaryCard = __esm({
+  ".svelte-kit/output/server/chunks/SummaryCard.js"() {
     init_ssr();
-    PageSummaryCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+    SummaryCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { title } = $$props;
       let { description: description2 } = $$props;
       if ($$props.title === void 0 && $$bindings.title && title !== void 0)
@@ -1099,9 +1099,9 @@ var Page;
 var init_page_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
     init_ssr();
-    init_c();
+    init_conf();
     init_PostCard();
-    init_PageSummaryCard();
+    init_SummaryCard();
     Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       const { homePageTitle: homePageTitle2, description: description2, titleSite: titleSite2 } = config;
       let { data } = $$props;
@@ -1111,7 +1111,7 @@ var init_page_svelte = __esm({
       {
         console.log({}.BASIC);
       }
-      return `${$$result.head += `<!-- HEAD_svelte-lhpand_START -->${$$result.title = `<title>${escape(titleSite2)}</title>`, ""}<meta name="description"${add_attribute("content", description2, 0)}><meta property="og:title"${add_attribute("content", titleSite2, 0)}><meta property="og:description"${add_attribute("content", description2, 0)}><meta property="og:url"${add_attribute("content", "https://kspotlight.fr/", 0)}><meta property="og:type" content="website"><meta name="twitter:title"${add_attribute("content", titleSite2, 0)}><meta name="twitter:description"${add_attribute("content", description2, 0)}><!-- HEAD_svelte-lhpand_END -->`, ""} ${validate_component(PageSummaryCard, "PostSummaryCard").$$render($$result, { title: homePageTitle2, description: description2 }, {}, {})} ${validate_component(PostCard, "PostCard").$$render($$result, { posts }, {}, {})}`;
+      return `${$$result.head += `<!-- HEAD_svelte-lhpand_START -->${$$result.title = `<title>${escape(titleSite2)}</title>`, ""}<meta name="description"${add_attribute("content", description2, 0)}><meta property="og:title"${add_attribute("content", titleSite2, 0)}><meta property="og:description"${add_attribute("content", description2, 0)}><meta property="og:url"${add_attribute("content", "https://kspotlight.fr/", 0)}><meta property="og:type" content="website"><meta name="twitter:title"${add_attribute("content", titleSite2, 0)}><meta name="twitter:description"${add_attribute("content", description2, 0)}><!-- HEAD_svelte-lhpand_END -->`, ""} ${validate_component(SummaryCard, "PostSummaryCard").$$render($$result, { title: homePageTitle2, description: description2 }, {}, {})} ${validate_component(PostCard, "PostCard").$$render($$result, { posts }, {}, {})}`;
     });
   }
 });
@@ -1134,7 +1134,7 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => component_cache3 ??= (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.ts";
-    imports3 = ["_app/immutable/nodes/2.a0a8eeaf.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/c.f156c77b.js", "_app/immutable/chunks/PostCard.9408f6da.js", "_app/immutable/chunks/Icon.ab70926a.js", "_app/immutable/chunks/PageSummaryCard.f780ba04.js"];
+    imports3 = ["_app/immutable/nodes/2.307ce447.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/conf.8aeff460.js", "_app/immutable/chunks/PostCard.1a62d8f4.js", "_app/immutable/chunks/Icon.c28bcaaf.js", "_app/immutable/chunks/SummaryCard.bad8d405.js"];
     stylesheets3 = [];
     fonts3 = [];
   }
@@ -1326,19 +1326,19 @@ var Page3;
 var init_page_svelte3 = __esm({
   ".svelte-kit/output/server/entries/pages/posts/_page.svelte.js"() {
     init_ssr();
-    init_c();
-    init_PageSummaryCard();
+    init_conf();
+    init_SummaryCard();
     init_PostCard();
     Page3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      const { postPageTitle, postsPageDesc: postsPageDesc2, titleSite: titleSite2 } = config;
+      const { postPageTitle: postPageTitle2, postsPageDesc: postsPageDesc2, titleSite: titleSite2 } = config;
       let { data } = $$props;
       const { posts } = data;
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `${$$result.head += `<!-- HEAD_svelte-1oo9x60_START -->${$$result.title = `<title>${escape(titleSite2)}</title>`, ""}<meta name="description"${add_attribute("content", postsPageDesc2, 0)}><meta property="og:title"${add_attribute("content", titleSite2, 0)}><meta property="og:description"${add_attribute("content", postsPageDesc2, 0)}><meta property="og:url"${add_attribute("content", "https://kspotlight.fr/", 0)}><meta property="og:type" content="website"><meta name="twitter:title"${add_attribute("content", titleSite2, 0)}><meta name="twitter:description"${add_attribute("content", postsPageDesc2, 0)}><!-- HEAD_svelte-1oo9x60_END -->`, ""} ${validate_component(PageSummaryCard, "PostSummaryCard").$$render(
+      return `${$$result.head += `<!-- HEAD_svelte-1oo9x60_START -->${$$result.title = `<title>${escape(titleSite2)}</title>`, ""}<meta name="description"${add_attribute("content", postsPageDesc2, 0)}><meta property="og:title"${add_attribute("content", titleSite2, 0)}><meta property="og:description"${add_attribute("content", postsPageDesc2, 0)}><meta property="og:url"${add_attribute("content", "https://kspotlight.fr/", 0)}><meta property="og:type" content="website"><meta name="twitter:title"${add_attribute("content", titleSite2, 0)}><meta name="twitter:description"${add_attribute("content", postsPageDesc2, 0)}><!-- HEAD_svelte-1oo9x60_END -->`, ""} ${validate_component(SummaryCard, "PostSummaryCard").$$render(
         $$result,
         {
-          title: postPageTitle,
+          title: postPageTitle2,
           description: postsPageDesc2
         },
         {},
@@ -1366,7 +1366,7 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => component_cache5 ??= (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
     universal_id4 = "src/routes/posts/+page.ts";
-    imports5 = ["_app/immutable/nodes/4.50c14916.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/c.f156c77b.js", "_app/immutable/chunks/PageSummaryCard.f780ba04.js", "_app/immutable/chunks/PostCard.9408f6da.js", "_app/immutable/chunks/Icon.ab70926a.js"];
+    imports5 = ["_app/immutable/nodes/4.66cf4498.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/conf.8aeff460.js", "_app/immutable/chunks/SummaryCard.bad8d405.js", "_app/immutable/chunks/PostCard.1a62d8f4.js", "_app/immutable/chunks/Icon.c28bcaaf.js"];
     stylesheets5 = [];
     fonts5 = [];
   }
@@ -1398,14 +1398,14 @@ var Page4;
 var init_page_svelte4 = __esm({
   ".svelte-kit/output/server/entries/pages/resources/_page.svelte.js"() {
     init_ssr();
-    init_c();
-    init_PageSummaryCard();
+    init_conf();
+    init_SummaryCard();
     Page4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       const { resPageTitle: resPageTitle2, resPageDesc: resPageDesc2 } = config;
       let { data } = $$props;
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `${validate_component(PageSummaryCard, "PageSummaryCard").$$render(
+      return `${validate_component(SummaryCard, "PageSummaryCard").$$render(
         $$result,
         {
           title: resPageTitle2,
@@ -1440,7 +1440,7 @@ var init__6 = __esm({
     index6 = 5;
     component6 = async () => component_cache6 ??= (await Promise.resolve().then(() => (init_page_svelte4(), page_svelte_exports4))).default;
     universal_id5 = "src/routes/resources/+page.ts";
-    imports6 = ["_app/immutable/nodes/5.ec721055.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/c.f156c77b.js", "_app/immutable/chunks/PageSummaryCard.f780ba04.js"];
+    imports6 = ["_app/immutable/nodes/5.7a16b6fb.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js", "_app/immutable/chunks/conf.8aeff460.js", "_app/immutable/chunks/SummaryCard.bad8d405.js"];
     stylesheets6 = [];
     fonts6 = [];
   }
@@ -2057,7 +2057,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "14xs5is"
+  version_hash: "qcopci"
 };
 function get_hooks() {
   return {};
@@ -5601,7 +5601,7 @@ var manifest = (() => {
     assets: /* @__PURE__ */ new Set(["data.json", "favicon.png", "icons/instagram.svg", "icons/tiktok.svg", "icons/youtube.svg"]),
     mimeTypes: { ".json": "application/json", ".png": "image/png", ".svg": "image/svg+xml" },
     _: {
-      client: { "start": "_app/immutable/entry/start.9ce9e259.js", "app": "_app/immutable/entry/app.83c5674f.js", "imports": ["_app/immutable/entry/start.9ce9e259.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/singletons.dadcd94f.js", "_app/immutable/chunks/index.66f17a68.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.83c5674f.js", "_app/immutable/chunks/preload-helper.a4192956.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js"], "stylesheets": [], "fonts": [] },
+      client: { "start": "_app/immutable/entry/start.e9b4fc9a.js", "app": "_app/immutable/entry/app.8cb759c8.js", "imports": ["_app/immutable/entry/start.e9b4fc9a.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/singletons.13742bb2.js", "_app/immutable/chunks/index.66f17a68.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.8cb759c8.js", "_app/immutable/chunks/preload-helper.a4192956.js", "_app/immutable/chunks/scheduler.5cba145a.js", "_app/immutable/chunks/index.1b9f201c.js"], "stylesheets": [], "fonts": [] },
       nodes: [
         __memo(() => Promise.resolve().then(() => (init__(), __exports))),
         __memo(() => Promise.resolve().then(() => (init__2(), __exports2))),
