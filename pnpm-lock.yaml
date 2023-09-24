@@ -31,9 +31,6 @@ devDependencies:
   '@sveltejs/adapter-cloudflare-workers':
     specifier: ^1.1.4
     version: registry.npmjs.org/@sveltejs/adapter-cloudflare-workers@1.1.4(@sveltejs/kit@1.22.6)
-  '@sveltejs/adapter-vercel':
-    specifier: ^3.0.3
-    version: registry.npmjs.org/@sveltejs/adapter-vercel@3.0.3(@sveltejs/kit@1.22.6)
   '@sveltejs/kit':
     specifier: ^1.20.4
     version: registry.npmjs.org/@sveltejs/kit@1.22.6(svelte@4.2.0)(vite@4.4.9)
@@ -487,26 +484,6 @@ packages:
       '@jridgewell/resolve-uri': registry.npmjs.org/@jridgewell/resolve-uri@3.1.1
       '@jridgewell/sourcemap-codec': registry.npmjs.org/@jridgewell/sourcemap-codec@1.4.15
 
-  registry.npmjs.org/@mapbox/node-pre-gyp@1.0.11:
-    resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.11.tgz}
-    name: '@mapbox/node-pre-gyp'
-    version: 1.0.11
-    hasBin: true
-    dependencies:
-      detect-libc: registry.npmjs.org/detect-libc@2.0.2
-      https-proxy-agent: registry.npmjs.org/https-proxy-agent@5.0.1
-      make-dir: registry.npmjs.org/make-dir@3.1.0
-      node-fetch: registry.npmjs.org/node-fetch@2.6.13
-      nopt: registry.npmjs.org/nopt@5.0.0
-      npmlog: registry.npmjs.org/npmlog@5.0.1
-      rimraf: registry.npmjs.org/rimraf@3.0.2
-      semver: registry.npmjs.org/semver@7.5.4
-      tar: registry.npmjs.org/tar@6.1.15
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
   registry.npmjs.org/@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
     name: '@nodelib/fs.scandir'
@@ -540,16 +517,6 @@ packages:
     version: 1.0.0-next.21
     dev: true
 
-  registry.npmjs.org/@rollup/pluginutils@4.2.1:
-    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-4.2.1.tgz}
-    name: '@rollup/pluginutils'
-    version: 4.2.1
-    engines: {node: '>= 8.0.0'}
-    dependencies:
-      estree-walker: registry.npmjs.org/estree-walker@2.0.2
-      picomatch: registry.npmjs.org/picomatch@2.3.1
-    dev: true
-
   registry.npmjs.org/@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz}
     name: '@sinclair/typebox'
@@ -580,22 +547,6 @@ packages:
       '@iarna/toml': registry.npmjs.org/@iarna/toml@2.2.5
       '@sveltejs/kit': registry.npmjs.org/@sveltejs/kit@1.22.6(svelte@4.2.0)(vite@4.4.9)
       esbuild: registry.npmjs.org/esbuild@0.18.20
-    dev: true
-
-  registry.npmjs.org/@sveltejs/adapter-vercel@3.0.3(@sveltejs/kit@1.22.6):
-    resolution: {integrity: sha512-0FQMjR6klW4627ewdclSr0lUe/DqiiyOaRTfgb5cXgNbVMsZMOA2fQ77TYQnJdvMfSEWe6y8uznV48XqKh9+vA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-3.0.3.tgz}
-    id: registry.npmjs.org/@sveltejs/adapter-vercel/3.0.3
-    name: '@sveltejs/adapter-vercel'
-    version: 3.0.3
-    peerDependencies:
-      '@sveltejs/kit': ^1.5.0
-    dependencies:
-      '@sveltejs/kit': registry.npmjs.org/@sveltejs/kit@1.22.6(svelte@4.2.0)(vite@4.4.9)
-      '@vercel/nft': registry.npmjs.org/@vercel/nft@0.23.1
-      esbuild: registry.npmjs.org/esbuild@0.18.20
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
     dev: true
 
   registry.npmjs.org/@sveltejs/kit@1.22.6(svelte@4.2.0)(vite@4.4.9):
@@ -912,29 +863,6 @@ packages:
       eslint-visitor-keys: registry.npmjs.org/eslint-visitor-keys@3.4.3
     dev: true
 
-  registry.npmjs.org/@vercel/nft@0.23.1:
-    resolution: {integrity: sha512-NE0xSmGWVhgHF1OIoir71XAd0W0C1UE3nzFyhpFiMr3rVhetww7NvM1kc41trBsPG37Bh+dE5FYCTMzM/gBu0w==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@vercel/nft/-/nft-0.23.1.tgz}
-    name: '@vercel/nft'
-    version: 0.23.1
-    engines: {node: '>=14'}
-    hasBin: true
-    dependencies:
-      '@mapbox/node-pre-gyp': registry.npmjs.org/@mapbox/node-pre-gyp@1.0.11
-      '@rollup/pluginutils': registry.npmjs.org/@rollup/pluginutils@4.2.1
-      acorn: registry.npmjs.org/acorn@8.10.0
-      async-sema: registry.npmjs.org/async-sema@3.1.1
-      bindings: registry.npmjs.org/bindings@1.5.0
-      estree-walker: registry.npmjs.org/estree-walker@2.0.2
-      glob: registry.npmjs.org/glob@7.2.3
-      graceful-fs: registry.npmjs.org/graceful-fs@4.2.11
-      micromatch: registry.npmjs.org/micromatch@4.0.5
-      node-gyp-build: registry.npmjs.org/node-gyp-build@4.6.0
-      resolve-from: registry.npmjs.org/resolve-from@5.0.0
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
   registry.npmjs.org/@vitest/expect@0.34.1:
     resolution: {integrity: sha512-q2CD8+XIsQ+tHwypnoCk8Mnv5e6afLFvinVGCq3/BOT4kQdVQmY6rRfyKkwcg635lbliLPqbunXZr+L1ssUWiQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/@vitest/expect/-/expect-0.34.1.tgz}
     name: '@vitest/expect'
@@ -983,12 +911,6 @@ packages:
       pretty-format: registry.npmjs.org/pretty-format@29.6.2
     dev: true
 
-  registry.npmjs.org/abbrev@1.1.1:
-    resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz}
-    name: abbrev
-    version: 1.1.1
-    dev: true
-
   registry.npmjs.org/acorn-jsx@5.3.2(acorn@8.10.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
     id: registry.npmjs.org/acorn-jsx/5.3.2
@@ -1013,17 +935,6 @@ packages:
     version: 8.10.0
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  registry.npmjs.org/agent-base@6.0.2:
-    resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz}
-    name: agent-base
-    version: 6.0.2
-    engines: {node: '>= 6.0.0'}
-    dependencies:
-      debug: registry.npmjs.org/debug@4.3.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   registry.npmjs.org/ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz}
@@ -1075,22 +986,6 @@ packages:
       picomatch: registry.npmjs.org/picomatch@2.3.1
     dev: true
 
-  registry.npmjs.org/aproba@2.0.0:
-    resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/aproba/-/aproba-2.0.0.tgz}
-    name: aproba
-    version: 2.0.0
-    dev: true
-
-  registry.npmjs.org/are-we-there-yet@2.0.0:
-    resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-2.0.0.tgz}
-    name: are-we-there-yet
-    version: 2.0.0
-    engines: {node: '>=10'}
-    dependencies:
-      delegates: registry.npmjs.org/delegates@1.0.0
-      readable-stream: registry.npmjs.org/readable-stream@3.6.2
-    dev: true
-
   registry.npmjs.org/arg@5.0.2:
     resolution: {integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/arg/-/arg-5.0.2.tgz}
     name: arg
@@ -1121,12 +1016,6 @@ packages:
     resolution: {integrity: sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/assertion-error/-/assertion-error-1.1.0.tgz}
     name: assertion-error
     version: 1.1.0
-    dev: true
-
-  registry.npmjs.org/async-sema@3.1.1:
-    resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/async-sema/-/async-sema-3.1.1.tgz}
-    name: async-sema
-    version: 3.1.1
     dev: true
 
   registry.npmjs.org/autoprefixer@10.4.15(postcss@8.4.27):
@@ -1172,14 +1061,6 @@ packages:
     name: binary-extensions
     version: 2.2.0
     engines: {node: '>=8'}
-    dev: true
-
-  registry.npmjs.org/bindings@1.5.0:
-    resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz}
-    name: bindings
-    version: 1.5.0
-    dependencies:
-      file-uri-to-path: registry.npmjs.org/file-uri-to-path@1.0.0
     dev: true
 
   registry.npmjs.org/brace-expansion@1.1.11:
@@ -1303,13 +1184,6 @@ packages:
       fsevents: registry.npmjs.org/fsevents@2.3.2
     dev: true
 
-  registry.npmjs.org/chownr@2.0.0:
-    resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz}
-    name: chownr
-    version: 2.0.0
-    engines: {node: '>=10'}
-    dev: true
-
   registry.npmjs.org/code-red@1.0.4:
     resolution: {integrity: sha512-7qJWqItLA8/VPVlKJlFXU+NBlo/qyfs39aJcuMT/2ere32ZqvF5OSxgdM5xOfJJ7O429gg2HM47y8v9P+9wrNw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/code-red/-/code-red-1.0.4.tgz}
     name: code-red
@@ -1336,13 +1210,6 @@ packages:
     version: 1.1.4
     dev: true
 
-  registry.npmjs.org/color-support@1.1.3:
-    resolution: {integrity: sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/color-support/-/color-support-1.1.3.tgz}
-    name: color-support
-    version: 1.1.3
-    hasBin: true
-    dev: true
-
   registry.npmjs.org/commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/commander/-/commander-4.1.1.tgz}
     name: commander
@@ -1354,12 +1221,6 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz}
     name: concat-map
     version: 0.0.1
-    dev: true
-
-  registry.npmjs.org/console-control-strings@1.1.0:
-    resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz}
-    name: console-control-strings
-    version: 1.1.0
     dev: true
 
   registry.npmjs.org/cookie@0.5.0:
@@ -1439,12 +1300,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  registry.npmjs.org/delegates@1.0.0:
-    resolution: {integrity: sha512-bd2L678uiWATM6m5Z1VzNCErI3jiGzt6HGY8OVICs40JQq/HALfbyNJmp0UDakEY4pMMaN0Ly5om/B1VI/+xfQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz}
-    name: delegates
-    version: 1.0.0
-    dev: true
-
   registry.npmjs.org/dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz}
     name: dequal
@@ -1455,13 +1310,6 @@ packages:
     resolution: {integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/detect-indent/-/detect-indent-6.1.0.tgz}
     name: detect-indent
     version: 6.1.0
-    engines: {node: '>=8'}
-    dev: true
-
-  registry.npmjs.org/detect-libc@2.0.2:
-    resolution: {integrity: sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.2.tgz}
-    name: detect-libc
-    version: 2.0.2
     engines: {node: '>=8'}
     dev: true
 
@@ -1512,12 +1360,6 @@ packages:
     resolution: {integrity: sha512-ZzPqGKghdVzlQJ+qpfE+r6EB321zed7e5JsvHIlMM4zPFF8okXUkF5Of7h7F3l3cltPL0rG7YVmlp5Qro7RQLA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.491.tgz}
     name: electron-to-chromium
     version: 1.4.491
-    dev: true
-
-  registry.npmjs.org/emoji-regex@8.0.0:
-    resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz}
-    name: emoji-regex
-    version: 8.0.0
     dev: true
 
   registry.npmjs.org/es6-promise@3.3.1:
@@ -1739,12 +1581,6 @@ packages:
     engines: {node: '>=4.0'}
     dev: true
 
-  registry.npmjs.org/estree-walker@2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz}
-    name: estree-walker
-    version: 2.0.2
-    dev: true
-
   registry.npmjs.org/estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz}
     name: estree-walker
@@ -1813,12 +1649,6 @@ packages:
       flat-cache: registry.npmjs.org/flat-cache@3.0.4
     dev: true
 
-  registry.npmjs.org/file-uri-to-path@1.0.0:
-    resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz}
-    name: file-uri-to-path
-    version: 1.0.0
-    dev: true
-
   registry.npmjs.org/fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz}
     name: fill-range
@@ -1860,15 +1690,6 @@ packages:
     version: 4.2.0
     dev: true
 
-  registry.npmjs.org/fs-minipass@2.1.0:
-    resolution: {integrity: sha512-V/JgOLFCS+R6Vcq0slCuaeWEdNC3ouDlJMNIsacH2VtALiu9mV4LPrHc5cDl8k5aw6J8jwgWWpiTo5RYhmIzvg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/fs-minipass/-/fs-minipass-2.1.0.tgz}
-    name: fs-minipass
-    version: 2.1.0
-    engines: {node: '>= 8'}
-    dependencies:
-      minipass: registry.npmjs.org/minipass@3.3.6
-    dev: true
-
   registry.npmjs.org/fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz}
     name: fs.realpath
@@ -1889,23 +1710,6 @@ packages:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz}
     name: function-bind
     version: 1.1.1
-    dev: true
-
-  registry.npmjs.org/gauge@3.0.2:
-    resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/gauge/-/gauge-3.0.2.tgz}
-    name: gauge
-    version: 3.0.2
-    engines: {node: '>=10'}
-    dependencies:
-      aproba: registry.npmjs.org/aproba@2.0.0
-      color-support: registry.npmjs.org/color-support@1.1.3
-      console-control-strings: registry.npmjs.org/console-control-strings@1.1.0
-      has-unicode: registry.npmjs.org/has-unicode@2.0.1
-      object-assign: registry.npmjs.org/object-assign@4.1.1
-      signal-exit: registry.npmjs.org/signal-exit@3.0.7
-      string-width: registry.npmjs.org/string-width@4.2.3
-      strip-ansi: registry.npmjs.org/strip-ansi@6.0.1
-      wide-align: registry.npmjs.org/wide-align@1.1.5
     dev: true
 
   registry.npmjs.org/get-func-name@2.0.0:
@@ -2006,12 +1810,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmjs.org/has-unicode@2.0.1:
-    resolution: {integrity: sha512-8Rf9Y83NBReMnx0gFzA8JImQACstCYWUplepDa9xprwwtmgEZUF0h/i5xSA625zB/I37EtrswSST6OXxwaaIJQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz}
-    name: has-unicode
-    version: 2.0.1
-    dev: true
-
   registry.npmjs.org/has@1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/has/-/has-1.0.3.tgz}
     name: has
@@ -2048,18 +1846,6 @@ packages:
     name: hast-util-whitespace
     version: 2.0.1
     dev: false
-
-  registry.npmjs.org/https-proxy-agent@5.0.1:
-    resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz}
-    name: https-proxy-agent
-    version: 5.0.1
-    engines: {node: '>= 6'}
-    dependencies:
-      agent-base: registry.npmjs.org/agent-base@6.0.2
-      debug: registry.npmjs.org/debug@4.3.4
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   registry.npmjs.org/ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/ignore/-/ignore-5.2.4.tgz}
@@ -2141,13 +1927,6 @@ packages:
     name: is-extglob
     version: 2.1.1
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  registry.npmjs.org/is-fullwidth-code-point@3.0.0:
-    resolution: {integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz}
-    name: is-fullwidth-code-point
-    version: 3.0.0
-    engines: {node: '>=8'}
     dev: true
 
   registry.npmjs.org/is-glob@4.0.3:
@@ -2347,15 +2126,6 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': registry.npmjs.org/@jridgewell/sourcemap-codec@1.4.15
 
-  registry.npmjs.org/make-dir@3.1.0:
-    resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz}
-    name: make-dir
-    version: 3.1.0
-    engines: {node: '>=8'}
-    dependencies:
-      semver: registry.npmjs.org/semver@6.3.1
-    dev: true
-
   registry.npmjs.org/mdast-util-to-string@3.2.0:
     resolution: {integrity: sha512-V4Zn/ncyN1QNSqSBxTrMOLpjr+IKdHl2v3KVLoWmDPscP4r9GcCi71gjgvUV1SFSKh92AjAG4peFuBl2/YgCJg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-3.2.0.tgz}
     name: mdast-util-to-string
@@ -2444,32 +2214,6 @@ packages:
     version: 1.2.8
     dev: true
 
-  registry.npmjs.org/minipass@3.3.6:
-    resolution: {integrity: sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz}
-    name: minipass
-    version: 3.3.6
-    engines: {node: '>=8'}
-    dependencies:
-      yallist: registry.npmjs.org/yallist@4.0.0
-    dev: true
-
-  registry.npmjs.org/minipass@5.0.0:
-    resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/minipass/-/minipass-5.0.0.tgz}
-    name: minipass
-    version: 5.0.0
-    engines: {node: '>=8'}
-    dev: true
-
-  registry.npmjs.org/minizlib@2.1.2:
-    resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/minizlib/-/minizlib-2.1.2.tgz}
-    name: minizlib
-    version: 2.1.2
-    engines: {node: '>= 8'}
-    dependencies:
-      minipass: registry.npmjs.org/minipass@3.3.6
-      yallist: registry.npmjs.org/yallist@4.0.0
-    dev: true
-
   registry.npmjs.org/mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz}
     name: mkdirp
@@ -2477,14 +2221,6 @@ packages:
     hasBin: true
     dependencies:
       minimist: registry.npmjs.org/minimist@1.2.8
-    dev: true
-
-  registry.npmjs.org/mkdirp@1.0.4:
-    resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz}
-    name: mkdirp
-    version: 1.0.4
-    engines: {node: '>=10'}
-    hasBin: true
     dev: true
 
   registry.npmjs.org/mlly@1.4.0:
@@ -2548,41 +2284,10 @@ packages:
     version: 1.4.0
     dev: true
 
-  registry.npmjs.org/node-fetch@2.6.13:
-    resolution: {integrity: sha512-StxNAxh15zr77QvvkmveSQ8uCQ4+v5FkvNTj0OESmiHu+VRi/gXArXtkWMElOsOUNLtUEvI4yS+rdtOHZTwlQA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.13.tgz}
-    name: node-fetch
-    version: 2.6.13
-    engines: {node: 4.x || >=6.0.0}
-    peerDependencies:
-      encoding: ^0.1.0
-    peerDependenciesMeta:
-      encoding:
-        optional: true
-    dependencies:
-      whatwg-url: registry.npmjs.org/whatwg-url@5.0.0
-    dev: true
-
-  registry.npmjs.org/node-gyp-build@4.6.0:
-    resolution: {integrity: sha512-NTZVKn9IylLwUzaKjkas1e4u2DLNcV4rdYagA4PWdPwW87Bi7z+BznyKSRwS/761tV/lzCGXplWsiaMjLqP2zQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.6.0.tgz}
-    name: node-gyp-build
-    version: 4.6.0
-    hasBin: true
-    dev: true
-
   registry.npmjs.org/node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/node-releases/-/node-releases-2.0.13.tgz}
     name: node-releases
     version: 2.0.13
-    dev: true
-
-  registry.npmjs.org/nopt@5.0.0:
-    resolution: {integrity: sha512-Tbj67rffqceeLpcRXrT7vKAN8CwfPeIBgM7E6iBkmKLV7bEMwpGgYLGv0jACUsECaa/vuxP0IjEont6umdMgtQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/nopt/-/nopt-5.0.0.tgz}
-    name: nopt
-    version: 5.0.0
-    engines: {node: '>=6'}
-    hasBin: true
-    dependencies:
-      abbrev: registry.npmjs.org/abbrev@1.1.1
     dev: true
 
   registry.npmjs.org/normalize-path@3.0.0:
@@ -2597,17 +2302,6 @@ packages:
     name: normalize-range
     version: 0.1.2
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  registry.npmjs.org/npmlog@5.0.1:
-    resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/npmlog/-/npmlog-5.0.1.tgz}
-    name: npmlog
-    version: 5.0.1
-    dependencies:
-      are-we-there-yet: registry.npmjs.org/are-we-there-yet@2.0.0
-      console-control-strings: registry.npmjs.org/console-control-strings@1.1.0
-      gauge: registry.npmjs.org/gauge@3.0.2
-      set-blocking: registry.npmjs.org/set-blocking@2.0.0
     dev: true
 
   registry.npmjs.org/object-assign@4.1.1:
@@ -2994,17 +2688,6 @@ packages:
       pify: registry.npmjs.org/pify@2.3.0
     dev: true
 
-  registry.npmjs.org/readable-stream@3.6.2:
-    resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz}
-    name: readable-stream
-    version: 3.6.2
-    engines: {node: '>= 6'}
-    dependencies:
-      inherits: registry.npmjs.org/inherits@2.0.4
-      string_decoder: registry.npmjs.org/string_decoder@1.3.0
-      util-deprecate: registry.npmjs.org/util-deprecate@1.0.2
-    dev: true
-
   registry.npmjs.org/readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz}
     name: readdirp
@@ -3054,13 +2737,6 @@ packages:
     name: resolve-from
     version: 4.0.0
     engines: {node: '>=4'}
-    dev: true
-
-  registry.npmjs.org/resolve-from@5.0.0:
-    resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/resolve-from/-/resolve-from-5.0.0.tgz}
-    name: resolve-from
-    version: 5.0.0
-    engines: {node: '>=8'}
     dev: true
 
   registry.npmjs.org/resolve@1.22.4:
@@ -3126,12 +2802,6 @@ packages:
       mri: registry.npmjs.org/mri@1.2.0
     dev: true
 
-  registry.npmjs.org/safe-buffer@5.2.1:
-    resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz}
-    name: safe-buffer
-    version: 5.2.1
-    dev: true
-
   registry.npmjs.org/sander@0.5.1:
     resolution: {integrity: sha512-3lVqBir7WuKDHGrKRDn/1Ye3kwpXaDOMsiRP1wd6wpZW56gJhsbp5RqQpA6JG/P+pkXizygnr1dKR8vzWaVsfA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/sander/-/sander-0.5.1.tgz}
     name: sander
@@ -3155,13 +2825,6 @@ packages:
       source-map-js: registry.npmjs.org/source-map-js@1.0.2
     dev: true
 
-  registry.npmjs.org/semver@6.3.1:
-    resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/semver/-/semver-6.3.1.tgz}
-    name: semver
-    version: 6.3.1
-    hasBin: true
-    dev: true
-
   registry.npmjs.org/semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/semver/-/semver-7.5.4.tgz}
     name: semver
@@ -3170,12 +2833,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: registry.npmjs.org/lru-cache@6.0.0
-    dev: true
-
-  registry.npmjs.org/set-blocking@2.0.0:
-    resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz}
-    name: set-blocking
-    version: 2.0.0
     dev: true
 
   registry.npmjs.org/set-cookie-parser@2.6.0:
@@ -3204,12 +2861,6 @@ packages:
     resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/siginfo/-/siginfo-2.0.0.tgz}
     name: siginfo
     version: 2.0.0
-    dev: true
-
-  registry.npmjs.org/signal-exit@3.0.7:
-    resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz}
-    name: signal-exit
-    version: 3.0.7
     dev: true
 
   registry.npmjs.org/sirv@2.0.3:
@@ -3265,25 +2916,6 @@ packages:
     name: streamsearch
     version: 1.1.0
     engines: {node: '>=10.0.0'}
-    dev: true
-
-  registry.npmjs.org/string-width@4.2.3:
-    resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz}
-    name: string-width
-    version: 4.2.3
-    engines: {node: '>=8'}
-    dependencies:
-      emoji-regex: registry.npmjs.org/emoji-regex@8.0.0
-      is-fullwidth-code-point: registry.npmjs.org/is-fullwidth-code-point@3.0.0
-      strip-ansi: registry.npmjs.org/strip-ansi@6.0.1
-    dev: true
-
-  registry.npmjs.org/string_decoder@1.3.0:
-    resolution: {integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz}
-    name: string_decoder
-    version: 1.3.0
-    dependencies:
-      safe-buffer: registry.npmjs.org/safe-buffer@5.2.1
     dev: true
 
   registry.npmjs.org/strip-ansi@6.0.1:
@@ -3518,20 +3150,6 @@ packages:
       - ts-node
     dev: true
 
-  registry.npmjs.org/tar@6.1.15:
-    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/tar/-/tar-6.1.15.tgz}
-    name: tar
-    version: 6.1.15
-    engines: {node: '>=10'}
-    dependencies:
-      chownr: registry.npmjs.org/chownr@2.0.0
-      fs-minipass: registry.npmjs.org/fs-minipass@2.1.0
-      minipass: registry.npmjs.org/minipass@5.0.0
-      minizlib: registry.npmjs.org/minizlib@2.1.2
-      mkdirp: registry.npmjs.org/mkdirp@1.0.4
-      yallist: registry.npmjs.org/yallist@4.0.0
-    dev: true
-
   registry.npmjs.org/text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz}
     name: text-table
@@ -3589,12 +3207,6 @@ packages:
     name: totalist
     version: 3.0.1
     engines: {node: '>=6'}
-    dev: true
-
-  registry.npmjs.org/tr46@0.0.3:
-    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz}
-    name: tr46
-    version: 0.0.3
     dev: true
 
   registry.npmjs.org/trough@2.1.0:
@@ -3941,21 +3553,6 @@ packages:
       - terser
     dev: true
 
-  registry.npmjs.org/webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz}
-    name: webidl-conversions
-    version: 3.0.1
-    dev: true
-
-  registry.npmjs.org/whatwg-url@5.0.0:
-    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz}
-    name: whatwg-url
-    version: 5.0.0
-    dependencies:
-      tr46: registry.npmjs.org/tr46@0.0.3
-      webidl-conversions: registry.npmjs.org/webidl-conversions@3.0.1
-    dev: true
-
   registry.npmjs.org/which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/which/-/which-2.0.2.tgz}
     name: which
@@ -3975,14 +3572,6 @@ packages:
     dependencies:
       siginfo: registry.npmjs.org/siginfo@2.0.0
       stackback: registry.npmjs.org/stackback@0.0.2
-    dev: true
-
-  registry.npmjs.org/wide-align@1.1.5:
-    resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==, registry: https://npm-proxy.fury.io/moovweb/, tarball: https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz}
-    name: wide-align
-    version: 1.1.5
-    dependencies:
-      string-width: registry.npmjs.org/string-width@4.2.3
     dev: true
 
   registry.npmjs.org/wrappy@1.0.2:
